@@ -28,6 +28,7 @@ class EmployeesController < ApplicationController
     def show
     end
     def destroy
+        @employee.delete
         if @employee.destroy
             redirect_to employees_path, notice: 'Employee has been deleted successfully'
         end

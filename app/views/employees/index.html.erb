@@ -40,7 +40,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><%= link_to "Edit", edit_employee_path(employee), class: "dropdown-item" %></li>
                                     <li><%= link_to "View", employee_path(employee), class: "dropdown-item" %></li>
-                                    <li><%= link_to "Delet", employee_path(employee), class: "dropdown-item", method: :delete,
+                                    <li><%= link_to "Delete", employee_path(employee), class: "dropdown-item", method: :delete,
                                     data: { confirm: 'are you sure to delete this employee?' }%></li>
                                 </ul>
                             </div>
@@ -82,8 +82,8 @@
                                         <p class="lead"><strong>pincode:</strong><%= employee.pincode %></p>
                                 </div>
                                 <div class="col-lg-12">
-                                <%= link_to "Edit", edit_employee_path(employee), class: "btn btn-primary" %>
-                                <%= link_to "Delet", employee_path(employee), class: "btn btn-danger", method: :delete,
+                                <%#= link_to "Edit", edit_employee_path(employee), class: "btn btn-primary" %>
+                                <%#= link_to "Delet", employee_path(employee), class: "btn btn-danger", method: :delete,
                                     data: { confirm: 'are you sure to delete this employee?' }%>
                                 </div>
                             </div>

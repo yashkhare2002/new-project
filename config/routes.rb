@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       registrations: 'users/registrations'
     }
 
-  devise_for :users
+  #devise_for :users
   #get-dekhna, post-first time save, patch-existing record ko save ya update krna ho ,delet-server se delet karna ho
   
   #get 'home/index'                 #/home/index
